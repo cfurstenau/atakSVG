@@ -1,0 +1,25 @@
+<html><head>
+</head>
+<body>
+
+<script>
+var count=60;
+var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+
+function timer()
+{
+  count=count-1;
+  if (count <= -1)
+  {
+     clearInterval(counter);
+     return;
+  }
+
+ document.getElementById("timer").innerHTML="<font size=4><b>" + count + "</b></font><font size=1> secs until next refresh</font>";
+}
+</script>
+
+<span id="timer"></span>
+
+</body>
+</html>

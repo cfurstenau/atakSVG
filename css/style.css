@@ -1,0 +1,35 @@
+html {
+  font-family: verdana, tahoma, arial, sans-serif; /* 1 */
+  -ms-text-size-adjust: 90%; /* 2 */
+  -webkit-text-size-adjust: 90%; /* 2 */
+  text-align: center;  /* To center all content to page */
+}
+
+body {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 90%;
+}
+ 
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+a {
+	text-decoration: none;
+}
+ 
+h1 {
+	color: #333;
+	font-family: 'Averia Libre', cursive; 
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+h3 {
+	color: #FF6347;
+}
+
+#timer {
+	float: right;
+}
