@@ -13,11 +13,17 @@
 	
 	<h3>Features & Notes</h3>
 	<p>01. In order for this application to be user friendly, there must be UI to manage the tag, status color, and text values.  Without it, this application can only be used by advanced users and developers.  Currently I am recommending that you use PhpMyAdmin or some similar tools to manage the data until this feature is implemented.</p>
-	<p>02. The menu is hardcoded.  It would be nice to manage it also with possibly the database so that newly added content will auto generate the menu items.</p>
-	<p>03. To accommodate for color blindness users, it would be great if either the shape changes according to the status or blink the path to give better alertness.</p>
-	<p>04. An easier interface to upload/download the SVG files.  The reason why I am hesitant to implement this is that there are too many security risk associated with this feature.  Since I dont want to continually patch for security holes, I'm not motivated to provide this feature.</p>
-	<p>The PHP function mysql_num_rows() has been deprecated and will be removed from future versions.  This may break any new implementation.</p>
+	<p>02. The menu is hard-coded.  It would be nice to manage it also with possibly the database so that newly added content will auto generate the menu items.</p>
+	<p>03. An easier interface to upload/download the SVG files.  The reason why I am hesitant to implement this is that there are too many security risk associated with this feature.  Since I dont want to continually patch for security holes, I'm not motivated to provide this feature.</p>
+	<p></p>
 	<hr>
+	
+	<h3>Version 0.2</h3>
+	<p>
+	01. Convert MySQL extension to MySQLi since The PHP function mysql_num_rows() has been deprecated and will be removed from future versions.  This will break any new implementation. [Files involved: dbconnect, dbclose, index.php]<br>
+	02. All table names had to be lowercase and added the underscore because my server hosted by the third party was case sensitive with the table name yet the XAMPP was not.<br>
+	03. To accommodate for color blindness users, it would be great if either the shape changes according to the status or blink the path to give better alertness.  Well I was able to accomplish the blinking feature.  That's good enough for me. Also we cannot force the users to comply to any particular shape for their status.  Most would chose a shape to represent the node/component.[colorMod.js]</p>
+	</p>
 	
     <h3>Version 0.1</h3>
 	<p>The initial version includes the following features:</p>
