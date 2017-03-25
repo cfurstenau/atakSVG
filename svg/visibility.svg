@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   onload="startup(evt)"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="visibility.svg">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="720"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="169.85382"
+     inkscape:cy="9.8198055"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <script
+     id="script4"><![CDATA[
+  var svgDoc;
+  function startup(evt){
+    svgDoc=evt.target.ownerDocument;
+  }
+  function see(newValue){
+    a="visibility"
+    e=svgDoc.getElementById(newValue);
+    ega=e.getAttribute(a)
+    if (ega=="hidden") e.setAttribute(a,"visible");
+    else e.setAttribute(a,"hidden");
+  }
+
+]]></script>
+  <rect
+     style="opacity:1;fill:#800000;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4146"
+     onclick="see('circle')"
+     width="21.186441"
+     height="21.186441"
+     x="134.49153"
+     y="54.067795" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="2.9661007"
+     y="23.135593"
+     id="text4148"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4150"
+       x="2.9661007"
+       y="23.135593"
+       style="font-size:22.5px">Visibility Magic Show</tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="51.260593"
+       id="tspan4152" /><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="66.926231"
+       id="tspan4154"
+       style="font-size:10px;fill:#4d4d4d">        Click on the square</tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="79.426231"
+       id="tspan4156" /><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="99.401848"
+       id="tspan4158"
+       style="font-size:17.5px"> Note: </tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="116.2931"
+       id="tspan4155">Inkscape will add the style=visibility:hidden </tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="131.91811"
+       id="tspan4160">automatically somehow and you must remove it </tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="147.54311"
+       id="tspan4178">within code.  I had to set the visibility=&quot;hidden&quot; </tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="163.16811"
+       id="tspan4180">manually to the circle element.</tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="178.79311"
+       id="tspan4162" /><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="194.41811"
+       id="tspan4164">At the beginning of the SVG onload=startup(evt) </tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="210.04311"
+       id="tspan4182">and there is an ECMAscript with a function see</tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="225.66811"
+       id="tspan4166">to create this magic show.</tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="241.29311"
+       id="tspan4149" /><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="256.91809"
+       id="tspan4151">On the rectangle, add an onclick=&quot;see('circle')&quot; to</tspan><tspan
+       sodipodi:role="line"
+       x="2.9661007"
+       y="272.54309"
+       id="tspan4153">trigger the event</tspan></text>
+  <circle
+     style="opacity:1;fill:#008000;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="circle"
+     visibility="hidden"
+     cx="195.07628"
+     cy="65.601692"
+     r="18.008474" />
+</svg>
