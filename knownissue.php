@@ -21,6 +21,16 @@
 	<small>The character encoding of the HTML document was not declared. The document will render with garbled text in some browser configurations if the document contains characters from outside the US-ASCII range. The character encoding of the page must be declared in the document or in the transfer protocol.</small></p>
 	<p>For clarification, I created my SVG files with Inkscape to generate the code but it included a XML declaration at the beginning of my SVG's which was preventing the PHP to include it somehow.  Not sure if this is accurate but this was my situation.  After removing the first line of the SVG, it worked as expected.</p>
 	<p>The line to remove was:  <pre>&lt;&#63;xml version="1.0" encoding="UTF-8" standalone="no"&#63;&gt;</pre></p>
+
+        <h3>Linux to Windows ^M Character Addition</h3>
+        <p>Windows add extraneous carriage return keys into the code.  We need to remove them from each files with this command:</p>
+        <p><i>Note -- the ^M is the CTRL-V then CTRL-M</i><br>
+        sed -e "s/^M//" filename > new<br>
+        mv new filename<br>
+        <u>or</u><br>
+        within VI, in command mode [ESC] type :%s/^M//g<br>
+        again the ^M is the CTRL-V and CTRL-M </p>
+        
   </body>
 
 </html>
