@@ -7,6 +7,7 @@
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 	
 	<!--Function to change out the colors and text content value pair-->
+        <script src='js/snap.svg-min.js'></script>
         <script src='js/colorMod.js'></script>
 	<script src='js/valueMod.js'></script>
 
@@ -25,6 +26,9 @@
 	  include('svg/'.$file); 
 	}
 	
+        /* Wrap SVG with Snap*/
+        echo "<script src='js/wrap.js'></script>";
+
 	/* -------------------------------------- */
 	/* DB connection and query filtered by tag*/
 	if (isset($_REQUEST['tag'])) {
@@ -78,7 +82,8 @@
 
   ?>
   
-    
+  
+       
   </body>
 
 </html>
