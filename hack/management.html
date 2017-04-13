@@ -220,6 +220,13 @@ and open the template in the editor.
         	})
         	.done(function(data){
              
+
+		//Refresh the main page view with the new information
+
+		var iframe = parent.parent.document.getElementById("scaled-frame");
+		var x = iframe.contentWindow.location.href;  
+		iframe.src = x;
+
             	// show the response
             	$('#response').html(data);
              
@@ -249,7 +256,15 @@ and open the template in the editor.
             	data: $(this).serialize()
         	})
         	.done(function(data){
-             
+             	
+
+		//Refresh the main page view with the new information
+
+		var iframe = parent.parent.document.getElementById("scaled-frame");
+		var x = iframe.contentWindow.location.href;  
+		iframe.src = x;
+
+
             	// show the response
             	$('#response').html(data);
              
