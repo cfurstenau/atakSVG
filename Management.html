@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+#wrapper { width: 900px; height: 550px; padding: 0; overflow: hidden; float: left; border: 1px solid black;}
+#scaled-frame { width: 1000px; height: 2000px; border: 0px; }
+#scaled-frame {
+    zoom: 0.71;
+    -moz-transform: scale(0.60);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.60);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.60);
+    -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #scaled-frame  { zoom: 1;  }
+}
+</style>
+<style>
+#wrapper2 { width: 300px; height: 550px; padding: 0; overflow: hidden; float: right; border: 1px solid black;}
+#scaled-frame2 { width: 1000px; height: 2000px; border: 0px; }
+#scaled-frame2 {
+    zoom: 0.71;
+    -moz-transform: scale(0.71);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.71);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.71);
+    -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #scaled-frame  { zoom: 1;  }
+}
+</style>
+
+<div id="wrapper"><iframe id="scaled-frame" src="index.php"></iframe></div>
+<div id="wrapper2"><iframe id="scaled-frame2" src="hack/management.html"></iframe></div>
+</body>
+</html>
